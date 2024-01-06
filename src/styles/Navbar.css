@@ -1,0 +1,41 @@
+.navbar {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 99vw;
+    height: 10.8vh;
+    max-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-icon {
+    margin-left: 140px;
+    padding: 5px 5px 5px 5px;
+    align-items: center;
+}
+
+.logout-container{
+    padding: 0 3rem;
+}
+.logout{
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.589);
+    color: var(--Pure-White, #FFF);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    cursor: pointer;
+}
+.logout:hover{
+    background-color: rgba(255, 0, 0, 0.91);
+    transition: 0.2s;
+}
+.logout:active{
+    background-color: rgb(227, 4, 4);
+    transition: 0.5s;
+}
+

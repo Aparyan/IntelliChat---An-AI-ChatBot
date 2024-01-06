@@ -1,0 +1,28 @@
+.userChat {
+  background-color: rgb(38, 221, 86);
+  width: fit-content;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 15px;
+  max-width: 80%;
+}
+.aiChatWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+.userChatWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.aiChat{
+  background-color: rgb(40, 40, 53);
+  width: fit-content;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 15px;
+  max-width: 80%;
+}
+

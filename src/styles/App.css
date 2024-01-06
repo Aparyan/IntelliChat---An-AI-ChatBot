@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.app{
+    background: url('https://s3-alpha-sig.figma.com/img/f92d/0a41/878799f848da9fe7de85284851b01be7?Expires=1704672000&Signature=UCMlKV5W~PXpj8XAGWdxp2wDDWl~DBU5AuoL~sy1DJeL0Pv9C3myCkjRMaJldKFrBJSTlXDtyPmlRMT90KYcqm5sZPGDsF39vPHFPQ3ifvvuMvhmexZ5hB~0htHPi74mi6SVoy0DFhKWTMaaYcb8KGYZhhJyBo68yxd8TQe5l9IyY7Tq9-oIz~WTjNfBx4WFd8bPYkHCbur78~q-ftI~bttjzwxcfY1ge1yWqIoTKhVcahG8RsX9ernzIPixIRLlvvDaXTnxOed9EQW6mpy~SIWJOoGezQ8sJ2ikRrmFsyRspPXrnaCpggxIT9ymqS~gkKTn8C8ambNqmDnyocnEBw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4') repeat-y center center/cover;
+    min-height: 100vh;
+    width: 99vw;
+    position: absolute;
+    z-index: -1;
+}
