@@ -20,7 +20,7 @@ export default function Main() {
             return;
         }
         let Email = email;
-        await axios.post("http://localhost:5000/login", {
+        await axios.post("https://intellichat-szoj.onrender.com/login", {
             data: {
                 email: Email,
                 password: pass
@@ -28,9 +28,9 @@ export default function Main() {
         }).then(res => {
             localStorage.setItem('username', res.data.username);
             if (res.data.username !== null)
-                window.location = 'http://localhost:3000/speech';
+                window.location = 'https://singular-duckanoo-dc7620.netlify.app/speech';
             else
-                window.location = 'http://localhost:3000/';
+                window.location = 'https://singular-duckanoo-dc7620.netlify.app/';
         }).catch(err => {
             console.log(err);
         })

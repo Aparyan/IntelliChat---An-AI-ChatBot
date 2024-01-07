@@ -31,14 +31,14 @@ const SpeechToText = ({ authorized }) => {
 
     const onClickHandler = async () => {
         if (inputText !== '') {
-            await axios.post("http://localhost:5000/setChat", {
+            await axios.post("https://intellichat-szoj.onrender.com/setChat", {
                 data: {
                     username: localStorage.getItem('username'),
                     Chats: inputText
                 }
             }).then(async (ai) => {
                 speechHandler(m, ai.data);
-                await axios.get("http://localhost:5000/userChats", {
+                await axios.get("https://intellichat-szoj.onrender.com/userChats", {
                     headers: {
                         username: localStorage.getItem('username')
                     }
@@ -54,7 +54,7 @@ const SpeechToText = ({ authorized }) => {
 
     const func = async () => {
         if (ch.length === 0) {
-            await axios.get("http://localhost:5000/userChats", {
+            await axios.get("https://intellichat-szoj.onrender.com/userChats", {
                 headers: {
                     username: localStorage.getItem('username')
                 }
@@ -64,14 +64,14 @@ const SpeechToText = ({ authorized }) => {
         }
         if (listening === false && transcript !== '') {
             setChats(transcript);
-            await axios.post("http://localhost:5000/setChat", {
+            await axios.post("https://intellichat-szoj.onrender.com/setChat", {
                 data: {
                     username: localStorage.getItem('username'),
                     Chats: transcript
                 }
             }).then(async (ai) => {
                     speechHandler(m, ai.data);
-                    await axios.get("http://localhost:5000/userChats", {
+                    await axios.get("https://intellichat-szoj.onrender.com/userChats", {
                         headers: {
                             username: localStorage.getItem('username')
                         }
